@@ -120,4 +120,5 @@
 
 // func();
 
-a = 2;
+
+console.log('added');
