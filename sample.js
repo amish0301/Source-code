@@ -119,6 +119,3 @@
 // }
 
 // func();
-
-
-console.log('added');
