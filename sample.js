@@ -98,7 +98,6 @@
 // obj.weakPassword(7);
 // obj.strongPassword(7);
 
-
 // // CLOSURES CONCEPT:
 
 // function func() {
@@ -119,3 +118,15 @@
 // }
 
 // func();
+
+// avg. of 3 numbers using spread opregator
+// function avg(a, b, c) {
+//     return (a + b + c)/3;
+// }
+
+// const arr = [1, 2, 3];
+// const ans = avg(...arr);
+// console.log(ans);
+
+// alarm clock
+
