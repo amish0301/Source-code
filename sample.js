@@ -119,5 +119,3 @@
 // }
 
 // func();
-
-console.log('hello world');
