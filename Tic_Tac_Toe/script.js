@@ -4,10 +4,11 @@ console.log("Welcome to Tic Tac Toe Game");
 const music = new Audio("#");
 const turnTone = new Audio("click.mp3");
 const winnerTone = new Audio("win.wav");
-const resetTone = new Audio("resetClick.mp3")
+const resetTone = new Audio("resetClick.mp3");
 
 // variables :
 let turn = "X";
+let iswin = false;
 
 // functions:
 const changeTurn = () => {
@@ -35,6 +36,7 @@ const checkWin = () => {
       boxtexts[e[0]].innerHTML === boxtexts[e[1]].innerHTML &&
       boxtexts[e[1]].innerHTML === boxtexts[e[2]].innerHTML
     ) {
+      iswin = true;
       winnerTone.play();
 
       document.getElementsByClassName("winBox")[0].innerHTML =
@@ -63,6 +65,21 @@ Array.from(boxes).forEach((ele) => {
       turnTone.play();
       checkWin();
 
+      // If now one wins logic:
+      if(!iswin) {
+        let cnt = 0;
+        let boxtexts = document.getElementsByClassName("boxText");
+
+        Array.from(boxtexts).forEach((e) => {
+          if(e.innerText !== "") {
+            cnt++;
+          }
+        });
+
+        if(cnt === 9) {
+          document.querySelector(".winBox").innerHTML = "No one Win!!";
+        }
+      }
       document.getElementsByClassName(
         "info"
       )[0].innerText = `Turn for : ${turn}`;
@@ -70,11 +87,9 @@ Array.from(boxes).forEach((ele) => {
   });
 });
 
-
 // RESET Button Logic :
 reset.addEventListener("click", () => {
-
-  resetTone.play(); 
+  resetTone.play();
   let boxtexts = document.getElementsByClassName("boxText");
   Array.from(boxtexts).forEach((e) => {
     e.innerHTML = "";
