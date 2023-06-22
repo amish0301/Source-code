@@ -127,6 +127,3 @@
 // const arr = [1, 2, 3];
 // const ans = avg(...arr);
 // console.log(ans);
-
-// alarm clock
-
