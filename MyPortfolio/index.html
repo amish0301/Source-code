@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>--Developer Portfolio--</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Amish's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Social-links</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div>
+          <div class="leftSection">
+            Hi, my name is <span class="focusedTextColor">Amish</span>
+            <div class="">and I'm a passionate</div>
+            <span id="element" class="focusedTextColor"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="/Utility_FIles/developer.png" alt="dev-img" />
+        </div>
+      </section>
+<hr>
+      <section class="secondSection">
+        <h2>Past Experience</h2>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Developer", "Web designer."],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
