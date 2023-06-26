@@ -8,12 +8,12 @@
 body {
   font-family: "Roboto Slab", serif;
   color: white;
-  background-color: rgb(5, 4, 33);
+  background-color: rgb(3, 2, 22);
 }
 
 /* utility classes */
 .focusedTextColor {
-  color: rgb(106, 31, 177);
+  color: rgb(144, 58, 224);
 }
 
 .text-grey {
@@ -63,7 +63,7 @@ body {
   color: white;
   padding: 18px;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 12px;
   border: none;
 }
 
@@ -181,14 +181,14 @@ nav ul li {
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #D80286;
+  box-shadow: inset 0 0 0 0 #9a24d0;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 
 .cv-btn:hover {
-  box-shadow: inset 400px 0 0 0 #93045c;
+  box-shadow: inset 400px 0 0 0 #9a24d0;
 }
 
 .git-btn:hover {
@@ -243,7 +243,7 @@ main hr {
 }
 
 footer {
-  background-color: rgb(33 30 45);
+  background-color: rgb(9 8 37);
 }
 
 .footer-container {
@@ -270,6 +270,11 @@ footer {
 .footer-2 ul li a {
   color: rgb(40, 40, 224);
   text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer-2 ul li a:hover {
+  color: #3e8e41;
 }
 
 footer .footer-rights {
