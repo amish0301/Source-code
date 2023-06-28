@@ -21,14 +21,10 @@ body {
 }
 
 .vertical-logo {
-  width: 60px;
-  position: relative;
-  top: -56px;
-  left: -28px;
-}
-
-.vertical-logo-small-width {
   width: 45px;
+  position: relative;
+  top: -54px;
+  left: -28px;
 }
 
 .vertical-logo:hover {
@@ -61,7 +57,7 @@ body {
   cursor: pointer;
   background-color: rgb(74, 74, 205);
   color: white;
-  padding: 18px;
+  padding: 12px;
   font-size: 16px;
   border-radius: 12px;
   border: none;
@@ -104,7 +100,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  height: 80px;
   background-color: rgb(25, 7, 67);
 }
 
@@ -137,25 +133,19 @@ nav ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 6.8vh 0;
+  margin: 80px 0;
 }
 
-.firstSection > div {
-  width: 30%;
-  justify-content: center;
-  font-weight: 600;
+.left-section {
+  font-size: 1.5rem;
 }
 
-.leftSection {
-  font-size: 2.3rem;
-}
-
-.leftSection span {
+.left-section span {
   font-weight: bold;
 }
 
 .buttons {
-  margin: 10px 5px;
+  margin: 30px 5px;
 }
 
 .git-btn {
@@ -171,7 +161,7 @@ nav ul li {
 }
 
 .cv-btn {
-  color: #FFF;
+  color: #fff;
   background-color: rgb(5 4 33);
   border: 2px solid rgb(216, 2, 134);
   border-radius: 10px;
@@ -201,12 +191,9 @@ nav ul li {
   text-decoration: none;
 }
 
-.rightSection {
-  margin: 50px 0;
-  position: relative;
-  width: 130%;
-  height: 105%;
-  right: 10vw;
+.rightSection img {
+  margin: 34px 0;
+  width: 80%;
 }
 
 .secondSection {
@@ -233,12 +220,12 @@ main hr {
   margin: 65px 0;
   height: 2px;
   display: flex;
-  justify-content: space-between;
 }
 
 .secondSection .box-info .vertical-bar {
-  height: 15vh;
+  height: 12vh;
   width: 1px;
+  margin: 0 130px;
   background-color: white;
 }
 
@@ -280,4 +267,127 @@ footer {
 footer .footer-rights {
   font-weight: 600;
   padding: 10px 7vw;
+}
+
+/* making responsive */
+@media screen and (max-width: 1400px) {
+
+  body {
+    min-width: fit-content;
+  }
+
+  nav {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav li {
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  main hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .firstSection .left-section {
+    font-size: 20px;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightSection {
+    width: 500px !important;
+  }
+
+  .rightSection img {
+    width: 100% !important;
+  }
+
+  .cv-btn , .git-btn{
+    padding: 18px 15px;
+  }
+
+  .secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-info {
+    flex-direction: column;
+  }
+
+  .vertical-bar {
+    height: unset;
+    margin: 0 165px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-logo {
+    width: 30px;
+    position: relative;
+    top: 45px;
+    left: -38px;
+  }
+
+  .vertical-title {
+    position: relative;
+    top: 2vh;
+    left: 18px;
+    width: fit-content;
+  }
+
+  .vertical-title > span {
+    width: max-content;
+    font-size: 10px;
+  }
+
+  .vertical-desc {
+    top: -45px;
+    left: 100px;
+    width: 10vw;
+    max-width: 10vw;
+  }
+
+  .dropdown {
+    left: 30px;
+    padding: 8px;
+    top: -4px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+  .dropbtn {
+    font-size: 12px;
+    border-radius: 12px;
+  }
+
+  footer {
+    /* position: relative; */
+    display: none;
+  }
+
+  footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 }
