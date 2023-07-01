@@ -23,8 +23,8 @@ body {
 .vertical-logo {
   width: 45px;
   position: relative;
-  top: -54px;
-  left: -28px;
+  top: -46px;
+  left: -21px;
 }
 
 .vertical-logo:hover {
@@ -199,11 +199,11 @@ nav ul li {
 .secondSection {
   max-width: 80vw;
   margin: auto;
-  height: 70vh;
+  height: 72vh;
 }
 
 .secondSection h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -236,42 +236,35 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  /* height: 40vh; */
-  padding: 50px;
+  padding-top: 15px;
 }
 
-.footer-container > div {
+.footer-left {
   width: 25vw;
 }
 
-.footer-1 h3 {
+.footer-left h2 {
   position: relative;
-  top: 30px;
+  top: 50px;
 }
 
-.footer-2 ul li {
+.footer-container ul li {
   list-style-type: none;
   padding: 5px 0;
 }
 
-.footer-2 ul li a {
+.footer-container ul li a {
   color: rgb(40, 40, 224);
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.footer-2 ul li a:hover {
+.footer-container ul li a:hover {
   color: #3e8e41;
 }
 
-footer .footer-rights {
-  font-weight: 600;
-  padding: 10px 7vw;
-}
-
-/* making responsive */
+/* responsiveness */
 @media screen and (max-width: 1400px) {
-
   body {
     min-width: fit-content;
   }
@@ -316,7 +309,8 @@ footer .footer-rights {
     width: 100% !important;
   }
 
-  .cv-btn , .git-btn{
+  .cv-btn,
+  .git-btn {
     padding: 18px 15px;
   }
 
@@ -324,6 +318,7 @@ footer .footer-rights {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 75vh;
   }
 
   .box-info {
@@ -378,16 +373,7 @@ footer .footer-rights {
     border-radius: 12px;
   }
 
-  footer {
-    /* position: relative; */
-    display: none;
-  }
-
-  footer > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+  .footer-container {
+    justify-content: space-around;
   }
 }
