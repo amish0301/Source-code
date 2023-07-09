@@ -18,11 +18,17 @@ const getWeather = (city) => {
 
       // Updating 3 Containers
       document.getElementsByClassName("card-title")[0].innerHTML =
-        response.temp + `<span>&#8451;</span>`;
+        response.temp == undefined
+          ? "--"
+          : response.temp + `<span>&#8451;</span>`;
       document.getElementsByClassName("big-humidity")[0].innerHTML =
-        response.humidity + `<span>%</span>`;
+        response.humidity == undefined
+          ? "--"
+          : response.humidity + `<span>%</span>`;
       document.getElementsByClassName("big-windSpeed")[0].innerHTML =
-        response.wind_speed + `<span> Km/h</span>`;
+        response.wind_speed == undefined
+          ? "--"
+          : response.wind_speed + `<span> Km/h</span>`;
 
       cloud_pct.innerHTML =
         response.cloud_pct === undefined ? "--" : response.cloud_pct;
@@ -64,32 +70,30 @@ const getWeather = (city) => {
       sunset.innerHTML = sstime === undefined ? "--" : sunSetTime;
 
       // Update Table
-      
       const res = [];
       const keys = Object.keys(response);
       let cnt = 0;
-      keys.forEach(key => {
-        res[cnt++] = response[key]; 
-      })
+      keys.forEach((key) => {
+        res[cnt++] = response[key];
+      });
       cnt = 0;
 
       if (city == "Gujarat") {
         let r1 = document.querySelectorAll(".row-1");
-        Array.from(r1).forEach((e)=> {
+        Array.from(r1).forEach((e) => {
           e.innerHTML = res[cnt++];
         });
-      }else if(city == "Delhi") {
+      } else if (city == "Delhi") {
         let r2 = document.querySelectorAll(".row-2");
-        Array.from(r2).forEach((e)=> {
+        Array.from(r2).forEach((e) => {
           e.innerHTML = res[cnt++];
         });
-      }else if(city == "Mumbai") {
+      } else if (city == "Mumbai") {
         let r3 = document.querySelectorAll(".row-3");
-        Array.from(r3).forEach((e)=> {
+        Array.from(r3).forEach((e) => {
           e.innerHTML = res[cnt++];
         });
       }
-      
     });
 };
 
