@@ -2,7 +2,7 @@ const getWeather = (city) => {
   const url =
     "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=" + city;
   const options = {
-    method: "GET",
+    method: "GET",  
     headers: {
       "X-RapidAPI-Key": "3b8b797fb9msh62aa0db262ebf8cp1d45fejsn8d14c406473c",
       "X-RapidAPI-Host": "weather-by-api-ninjas.p.rapidapi.com",
@@ -12,7 +12,7 @@ const getWeather = (city) => {
   fetch(url, options)
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
+      // console.log(response);
 
       cityName.innerHTML = city;
 
