@@ -1,0 +1,355 @@
+/* key Points to remember:
+  1. if you want to apply width & height on "Span" tag, you must have to make display as "inline-block".
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main-container {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  font-size: 16px;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1vw 12vw;
+}
+
+.nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+
+  /* to apply gsap animation on a tag */
+  display: inline-block; 
+}
+
+.nav a:hover {
+  color: rgb(197, 21, 21);
+}
+
+.left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav #name-to-do-center {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+button {
+  padding: 10px 14px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: rgb(20, 57, 76) !important;
+  color: white;
+}
+
+.home-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vw;
+  padding-inline: 12vw;
+}
+
+.sustain {
+  width: 10vw;
+}
+
+.sustain p {
+  font-size: 12px;
+  text-transform: capitalize;
+  opacity: 0.5;
+  margin: 10px 0;
+}
+
+.sustain .sustainimg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+
+.sustainimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ephemeral {
+  position: relative;
+  width: 30vw;
+  min-height: 42vw;
+}
+
+.ephemeral .headings {
+  position: absolute;
+  top: -23%;
+  left: -15%;
+}
+
+.ephemeral .headings h1 {
+  letter-spacing: -.4vw;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 6vw;
+}
+
+.ephemeral img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ephemeral p {
+  font-size: 1.1vw;
+  width: 50%;
+  letter-spacing: .1vw;
+  font-weight: 700;
+}
+
+.vis {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.circle-icon {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+}
+
+.circle-icon i {
+  color: #5e5e5e;
+}
+
+.vis h3 {
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.motive {
+  padding: 3vw 12vw;
+  margin-top: 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.motive p {
+  position: relative;
+  text-align: right;
+  right: 0;
+  width: 82%;
+  font-size: 1.4vw;
+  line-height: 1.7;
+}
+
+.motive span {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  border-radius: 100px;
+  margin-inline: 10px;
+  margin-bottom: -12.5px;
+  background-color: red;
+}
+
+#onespan {
+  width: 70px;
+  height: 40px;
+  background-image: url('/Animated_Site//bluegirl.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#secondspan {
+  width: 70px;
+  height: 40px;
+  background-image: url('./shaljam.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#thirdspan {
+  width: 70px;
+  height: 40px;
+  background-image: url('./grass.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* 3rd Section styling */
+.pictures {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw;
+  padding-left: 14vw;
+  padding-right: 12vw;
+  margin-top: 8vw;
+}
+
+.left-pic-txt , .right-pic-txt {
+  width: 16vw;
+}
+
+.left-pic , .right-pic{
+  width: 100%;
+  height: 25vw;
+  margin-bottom: 1vw;
+}
+
+.left-pic img , .right-pic img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-pic-txt h1 , .right-pic-txt h1{
+  font-weight: bold;
+  letter-spacing: -.1vw;
+}
+
+.left-pic-txt p, .right-pic-txt p{
+  opacity: .8;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: -.007vw;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.right-pic-txt {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.right-pic {
+  height: 36vw;
+}
+
+.right-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+.right-pic-txt p {
+  width: 50%;
+  text-align: right;
+}
+
+/* 4th Section Styling */
+.banner {
+  width: 100%;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bimg {
+  width: 65%;
+  height: 60vh;
+}
+
+.bimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 70%;
+}
+
+.btxt {
+  width: 35%;
+  padding: 0 3vw;
+}
+
+.btxt h1 {
+  font-size: 2.5vw;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -.15vw;
+}
+
+.btxt p {
+  margin-top: 20px;
+  width: 60%;
+  font-size: 1vw;
+}
+
+/* 5th section styling */
+.future {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+.future video {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ftxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 9999;
+}
+
+.ftxt button {
+  padding: .8vw 1.7vw;
+  font-size: .8vw;
+  margin-top: 1vw;
+  letter-spacing: -.05vw;
+  font-weight: 700;
+  outline: none;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #c6c6c6;
+}

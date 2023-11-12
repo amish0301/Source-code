@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Page</title>
+    <!-- scrolling cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <!-- icons cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- shery Js css  -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav">
+        <div class="left">
+          <a class="nlink" href="#">Home</a>
+          <a class="nlink" href="#">Contact Us</a>
+          <a class="nlink" href="#">About Us</a>
+          <a class="nlink" href="#" id="name-to-do-center"
+            >Amish's Animated Site</a
+          >
+        </div>
+        <div class="right">
+          <button type="button">Login</button>
+          <button type="button">Sign Up</button>
+        </div>
+      </div>
+
+      <div class="home-menu">
+        <!-- 1 partition -->
+        <div class="sustain">
+          <h5>01.</h5>
+          <h2>Sustainability.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            possimus perferendis iure eos dolorum nesciunt illum quasi
+            praesentium repellat, at accusamus aspernatur eaque.
+          </p>
+          <div class="sustainimg">
+            <img src="/Animated_Site/pinkgreenplant.jpg" alt="img" />
+          </div>
+        </div>
+
+        <!-- 2 partition -->
+        <div class="ephemeral">
+          <div class="headings">
+            <h1>Ephemeral</h1>
+            <h1>Equillibrium.</h1>
+          </div>
+          <div class="img-and-txt">
+            <img src="/Animated_Site/pinkplant.jpg" alt="img" />
+            <p>
+              Commited to Sustainability and Eco-friendly choice for a better
+              tommorrow.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 partition -->
+        <div class="vis">
+          <div class="circle-icon">
+            <i class="ri-arrow-down-line"></i>
+          </div>
+          <h3>Visit Our Gallery</h3>
+        </div>
+      </div>
+
+      <div class="motive">
+        <h3>Our Motive</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elite.
+          <span id="onespan"></span>
+          Consequuntur molestiae quisquam repellat soluta laborum distinctio
+          dolorem id, similique corrupti
+          <span id="secondspan"></span> recusandae asperiores fugit corporis
+          consequatur eaque est neque! Similique, sit debitis?
+          <span id="thirdspan"></span>
+        </p>
+      </div>
+
+      <div class="pictures">
+        <div class="left-pic-txt">
+          <div class="left-pic imgEffect">
+            <img src="./sea.jpg" alt="img" />
+          </div>
+          <h1>Synergy.</h1>
+          <p>
+            Commited to Sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+        <div class="right-pic-txt">
+          <div class="right-pic imgEffect">
+            <img src="./cloud.jpg" alt="img" />
+          </div>
+          <h1>Harmony.</h1>
+          <p>
+            Commited to Sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="bimg">
+          <img src="./bottle.jpg" alt="bottle-img" />
+          <img src="./bottle2.jpg" alt="img" />
+        </div>
+        <div class="btxt">
+          <h1>Biodegradable</h1>
+          <h1>Packaging</h1>
+          <p>
+            Commited to Sustainability, eco-friendly choices for a better
+            tomorrow.
+          </p>
+        </div>
+      </div>
+
+      <div class="future">
+        <video src="./back.mp4" autoplay muted loop></video>
+        <div class="ftxt">
+          <h1>think of future</h1>
+          <button>Join the Movement</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- gsap script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Locomotive script -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- Shery Js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <!-- Main cdn of Shery js -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+
+    <!-- main script -->
+    <script src="script.js"></script>
+  </body>
+</html>
